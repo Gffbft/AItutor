@@ -6,14 +6,15 @@ import pymongo
 
 user_mistake = ""
 username = "kalashnikovstepan08"
-password = "UJjMWWm4SgqYJQi0"
+password = os.environ.get('MONGODB_PASSWORD')
 cluster_url = "cluster0.gdumxrw.mongodb.net"
 
 # Construct the MongoDB Atlas connection string
-mongo_url = f"mongodb+srv://{username}:{password}@{cluster_url}/test?retryWrites=true&w=majority"
+mongo_url = f"mongodb+srv://{username}:{password}@{cluster_url}/"
+print(mongo_url)
 #myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 myclient = pymongo.MongoClient(mongo_url)
-#myclient.drop_database('mydatabase')
+myclient.drop_database('mydatabase')
 mydb = myclient["mydatabase"]
 mycol = mydb["user_data"]
 
