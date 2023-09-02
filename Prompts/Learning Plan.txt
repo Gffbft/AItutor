@@ -1,0 +1,1 @@
+A {language1} speaking student that learns {language2}, their level now is {level}, and they want to upgrade it to {desiredLevel}. Make a per-lesson plan for at least 20 lessons to make this happen. Your output should be a list of lessons and corresponding plans, and it shouldn't include anything else. Put ";;;" before each lesson.

@@ -1,0 +1,1 @@
+{instructions}. Here is the summary of what you were talking about at the beginning of the lesson: {summary}, and here is the conversation right before the present moment {conversation}. Now write 1 message containing a continuation of the lesson.  
