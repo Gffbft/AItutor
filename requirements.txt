@@ -23,7 +23,6 @@ mongo-db==0.1
 mongodb-api==0.0.1
 mpmath==1.3.0
 multidict==6.0.4
-numpy==1.25.1
 openai==0.27.8
 packaging==23.1
 prompt-toolkit==3.0.39
