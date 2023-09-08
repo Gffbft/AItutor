@@ -2,14 +2,15 @@ import openai
 import time
 import numpy as np
 import random
+import os
 
-openai.api_key = "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"
+openai.api_key = os.environ.get("OPEN_AI_TOKEN")
 
-PATHS = {"SYSTEM_PROMPT": r"C:\Users\stepa\PycharmProjects\AItutor\Prompts\NewSystemPrompt.txt",
-         "MISTAKES_CHECKING_PROMPT": r"C:\Users\stepa\PycharmProjects\AItutor\Prompts\Mistakes Checking Prompt.txt",
-         "GENERAL_SUMMARIZING_PROMPT": r"C:\Users\stepa\PycharmProjects\AItutor\Prompts\General summarizing prompt.txt",
-         "SMALL_TALK_TOPICS": r"C:\Users\stepa\PycharmProjects\AItutor\Prompts\SmallTalk Topics.txt",
-         "LEARNING_PLAN_PROMPT": r"C:\Users\stepa\PycharmProjects\AItutor\Prompts\Learning Plan.txt"}
+PATHS = {"SYSTEM_PROMPT": r".\Prompts\NewSystemPrompt.txt",
+         "MISTAKES_CHECKING_PROMPT": r".\Prompts\Mistakes Checking Prompt.txt",
+         "GENERAL_SUMMARIZING_PROMPT": r".\Prompts\General summarizing prompt.txt",
+         "SMALL_TALK_TOPICS": r".\Prompts\SmallTalk Topics.txt",
+         "LEARNING_PLAN_PROMPT": r".\Prompts\Learning Plan.txt"}
 
 
 def save_array(data, saveDir):

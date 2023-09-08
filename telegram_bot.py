@@ -77,7 +77,7 @@ def send_question(user_id, question_index):
         documents = mycol.find()
 
         print(documents)
-        bot.send_message(user_id, "Now you can start the lesson. Say \"Hello!\" to your tutor!")
+        bot.send_message(user_id, "Now you can start the lesson. Say \"Hello!\" to your tutor! On the language you want to learn")
 
 
 def process_answer(message, question_index):
@@ -129,7 +129,7 @@ def handle_message(message):
         mistakes_update = {"$set": {"mistakes": mistakes}}
         mycol.update_one(myquery, mistakes_update)
         user_context[user_id]["conversation"] = []
-        bot.send_message(user_id, "Now you can proceed with the next lesson.")
+        bot.send_message(user_id, "Now you can proceed with the next lesson. Say Hello! on the language you want to learn")
 
 
 
