@@ -1,12 +1,21 @@
 {
   "name": "telegram-bot-test",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "@types/lodash": "^4.14.198",
+    "@types/node": "^20.6.0",
+    "@vercel/ncc": "^0.38.0"
+  }
 }
